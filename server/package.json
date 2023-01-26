@@ -7,13 +7,14 @@
     "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
     "lint": "./node_modules/.bin/eslint **/*.js",
     "start:server": "nodemon index.js --ignore '../client/'",
-    "start:client": "npm run serve --prefix '../client/'",
+    "start:client": "npm run serve --prefix ../client/",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.2.4",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "eslint": "^8.32.0",
